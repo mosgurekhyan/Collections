@@ -1,0 +1,77 @@
+.ourCollection {
+    width: 100%;
+    height: auto;
+    background: #0e1349;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 30px;
+}
+
+.ourCollection h1 {
+    font-family: 'Conthrax';
+    font-size: 55px;
+    width: 800px;
+    margin: 25px 0 38px 0;
+}
+
+.collection {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    row-gap: 40px;
+}
+
+.collectionData {
+    height: 400px;
+    width: 330px;
+    backdrop-filter: blur(4px);
+    background: linear-gradient(89.96deg,hsla(0,0%,100%,.05) .03%,hsla(0,0%,100%,.008) 49.67%,hsla(0,0%,100%,.05) 99.96%);
+    border: 1px solid hsla(0,0%,100%,.1);
+    border-radius: 26px;
+    display: grid;
+    place-items: center;
+    position: relative;
+}
+
+.imgWrapper2 {
+    overflow: hidden;
+    border-radius: 20px;
+}
+
+.collectionData img {
+    object-fit: cover;
+    width: 285px;
+    height: 360px;
+    transition: 1.2s;
+}
+
+.collectionData img:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.collectionData span {
+    position: absolute;
+    top: 300px;
+    font-family: 'Conthrax';
+    backdrop-filter: blur(4px);
+    background: hsla(0,0%,100%,.1);
+    border-radius: 11px;
+    padding: 17px;
+    position: absolute;
+    text-align: center;
+    font-size: 14px;
+    width: 270px;
+    transition: .4s;
+}
+
+.collectionData span:hover {
+    cursor: pointer;
+    color: #0d6efd;
+}
+
+.collectionData span:hover .collectionData img {
+    transform: scale(1.2);
+}

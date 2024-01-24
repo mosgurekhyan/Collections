@@ -1,0 +1,82 @@
+.teamMembers {
+    width: 100%;
+    height: 1030px;
+    padding: 30px;
+    background: #0e1349;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    width: 800px !important;
+}
+
+.overlay3 {
+    position: absolute;
+    height: inherit;
+    width: inherit;
+    background-image: url('../../images/overlay2.png');
+    background-size: contain;
+    background-position: center center; 
+    top: -30%;
+    left: 0;
+}
+
+.members {
+    width: 75%;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 50px;
+    z-index: 2;
+    column-gap: 20px;
+}
+
+.member {
+    width: 250px;
+    height: 330px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.teamMembers .imageFrame {
+    padding: 12px;
+    width: 100%;
+    height: 250px;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    background: linear-gradient(89.96deg,hsla(0,0%,100%,.05) .03%,hsla(0,0%,100%,.008) 49.67%,hsla(0,0%,100%,.05) 99.96%);
+    border: 1px solid hsla(0,0%,100%,.1);
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.teamMembers img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.teamMembers .imageFrame::after {
+    background: linear-gradient(90deg,hsla(0,0%,100%,.13),hsla(0,0%,100%,.13) 77%,hsla(0,0%,100%,.5) 92%,hsla(0,0%,100%,0));
+    content: "";
+    height: 100%;
+    left: -210%;
+    position: absolute;
+    transition: all .7s ease 0s;
+    width: 140%;
+    top: 0;
+}
+
+.teamMembers .imageFrame:hover::after {
+    left: 0%;
+}
+
+.teamMembers .imageFrame:hover {
+    cursor: pointer;
+}

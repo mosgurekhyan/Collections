@@ -1,0 +1,84 @@
+.blog {
+    width: 100%;
+    height: 720px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #101331;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog .overlay6 {
+    position: absolute;
+    top: -200px;
+    left: 200px;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(34.98% 34.98% at 50% 50%,#725bda 0,rgba(6,19,45,0) 100%);
+}
+
+.blogContainer {
+    width: 100%;
+    height: 470px;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 200px;
+}
+
+.blogElementData {
+    width: 345px;
+    height: 430px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.blog .imageFrame {
+    padding: 12px;
+    width: 100%;
+    height: 300px;
+    border-radius: 20px;
+    backdrop-filter: blur(4px);
+    background: linear-gradient(89.96deg,hsla(0,0%,100%,.05) .03%,hsla(0,0%,100%,.008) 49.67%,hsla(0,0%,100%,.05) 99.96%);
+    border: 1px solid hsla(0,0%,100%,.1);
+    margin-bottom: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.blog img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+}
+
+.blog .imageFrame::after {
+    background: linear-gradient(90deg,hsla(0,0%,100%,.13),hsla(0,0%,100%,.13) 77%,hsla(0,0%,100%,.5) 92%,hsla(0,0%,100%,0));
+    content: "";
+    height: 100%;
+    left: -210%;
+    position: absolute;
+    transition: all .7s ease 0s;
+    width: 140%;
+    top: 0;
+}
+
+.blog .imageFrame:hover::after {
+    left: 0%;
+}
+
+.blog .imageFrame:hover {
+    cursor: pointer;
+}
+
+.blogElementData span {
+    display: flex;
+    column-gap: 10px;
+}
+
+.blogElementData h3 {
+    text-align: center;
+    margin-top: 20px;
+}

@@ -1,0 +1,70 @@
+.steps {
+    width: 600px;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    row-gap: 30px;
+}
+
+.step {
+    width: 600px;
+    height: auto;
+    background: linear-gradient(180deg,hsla(0,0%,100%,.05),hsla(0,0%,100%,0) 73.86%);
+    border-radius: 16px;
+    position: relative;
+    display: flex;
+    padding: 30px 0;
+}
+
+.step span {
+    backdrop-filter: blur(4px);
+    background: linear-gradient(89.96deg,hsla(0,0%,100%,.05) .03%,hsla(0,0%,100%,.008) 49.67%,hsla(0,0%,100%,.05) 99.96%);
+    border: 1px solid hsla(0,0%,100%,.1);
+    border-radius: 100px;
+    padding: 4px 11px;
+    width: fit-content;
+    display: block;
+    position: absolute;
+    top: -10px;
+    left: 30px;
+}
+
+.step h5 {
+    font-family: 'Conthrax';
+    background: linear-gradient(264.28deg, #dec7ff -38.2%, #5c27fe 103.12%), #fff;
+    -webkit-background-clip: text;
+    background-clip: text; 
+    color: transparent;
+}
+
+.stepContainer1 {
+    width: 100px;
+    height: 100%;
+    display: grid;
+    place-items: center;
+}
+
+.stepContainer2 {
+    width: 100%;
+    height: 100%;
+    padding: 0 20px;
+    color: #ddd;
+}
+
+.stepContainer2 h3 {
+    font-family: 'Conthrax';
+}
+
+.stepContainer2 p {
+    font-size: 17px;
+    margin-top: 10px;
+}
+
+.line8 {
+    width: .5px;
+    background: hsla(0,0%,100%,.1);
+}
+
+.step img {
+    object-fit: contain;
+}
